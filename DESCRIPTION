@@ -1,0 +1,10 @@
+Package: andrewjlm
+Title: A set of utility functions that I find personally useful
+Version: 0.1
+Authors@R: "Andrew Mullins <mullinsajl@gmail.com> [aut, cre]"
+Description: So far, just aggregates various functions that I developed to save
+    me time.
+Depends:
+    R (>= 3.1.0)
+License: MIT
+LazyData: true
