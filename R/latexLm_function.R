@@ -27,7 +27,7 @@ latexLm <- function(model) {
   }
   
   # Start to build the final string
-  finalString <- paste('\\widehat{',response,'}=',int,'+')
+  finalString <- paste('\\widehat{',response,'}=',format(int, digits = 3),'+')
   
   # Add remaining strings
   for (j in 1:length(strs)) {
