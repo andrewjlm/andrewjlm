@@ -19,6 +19,6 @@ criteriaTable <- function(model) {
                    RMSE = summ$sigma,
                    RMSP = rmsp(model),
                    AIC = extractAIC(model)[2],
-                   BIC = extractBIC(model, k = log(fullModel$residuals))[2])
+                   BIC = extractAIC(model, k = log(fullModel$residuals))[2])
   return(df)
 }
