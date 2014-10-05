@@ -22,8 +22,8 @@ latexLm <- function(model) {
   # Insert values, term names and plus signs
   for (i in 1:length(strs)) {
     ifelse(i == length(strs),
-           strs[i] <- paste(values[i], terms[i]),
-           strs[i] <- paste(values[i], terms[i], "+"))
+           strs[i] <- paste(format(values[i], digits = 3), terms[i]),
+           strs[i] <- paste(format(values[i], digits = 3), terms[i], "+"))
   }
   
   # Start to build the final string
