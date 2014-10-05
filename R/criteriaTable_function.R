@@ -18,8 +18,7 @@ criteriaTable <- function(model) {
                    SSE = last(last(anova[2])),
                    RMSE = summ$sigma,
                    RMSP = rmsp(model),
-                   # Note - might change to extract*IC
-                   AIC = AIC(model),
-                   BIC = BIC(model))
+                   AIC = extractAIC(model),
+                   BIC = extractBIC(model))
   return(df)
 }
