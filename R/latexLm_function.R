@@ -31,7 +31,7 @@ latexLm <- function(model) {
   
   # Add remaining strings
   for (j in 1:length(strs)) {
-    finalString <- paste(finalString, strs[i])
+    finalString <- paste(finalString, strs[j])
   }
   
   # Cat for now, not sure best way to output
