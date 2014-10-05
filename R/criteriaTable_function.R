@@ -12,7 +12,8 @@
 criteriaTable <- function(model) {
   summ <- summary(model)
   anova <- anova(model)
-  df <- data.frame(df = model$df,
+  df <- data.frame(name = deparse(substitute(model)),
+                   df = model$df,
                    r.squared = summ$r.squared,
                    SSE = last(last(anova[2])),
                    RMSE = summ$sigma,
